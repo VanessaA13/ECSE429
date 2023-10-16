@@ -1,27 +1,43 @@
 using System;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using System.Diagnostics;
-using NUnit.Framework;
+using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace Projects
 {
     public class Tests
     {
-        string url = "http://localhost:4567/projects";
+        readonly string url = "http://localhost:4567/projects";
+        readonly string projectsPrefix="{\"projects\":[";
+        readonly string projectsPostfix="]}";
+        readonly string project1="{\"id\":\"1\",\"title\":\"Office Work\",\"completed\":\"false\",\"active\":\"false\",\"description\":\"\",\"tasks\":[{\"id\":\"2\"},{\"id\":\"1\"}]}";
 
         [SetUp]
         public void Setup()
-        {
+        {   
         }
 
         [Test]
-        public void GetProjects()
+        public void GET_Projects_1()
         {
-            var response = SendGetRequestAsync(url).Result;
-            Console.WriteLine("AddTodo Test - Response: " + response);
-            Assert.Pass();
+            string response = SendGetRequestAsync(url).Result;
+            JObject responseJSON = JObject.Parse(response);
+
+            string expected=projectsPrefix+project1+projectsPostfix;
+            JObject expectedJSON = JObject.Parse(expected);
+
+            //Console.WriteLine("AddTodo Test - Response: " + response);
+            Assert.That(responseJSON.ToString(), Is.EqualTo(expectedJSON.ToString()));
+        }
+
+        [Test]
+        public void HEAD_Projects_1()
+        {
+            string response = SendHeadRequestAsync(url).Result;
+
+            Console.WriteLine("Head: " + response);
+            Assert.That(response, Is.Not.EqualTo(""));
         }
 
         [Test]
@@ -41,7 +57,7 @@ namespace Projects
         }
 
 
-        public async Task<string> SendPostRequestAsync(string url, string json)
+        private static async Task<string> SendPostRequestAsync(string url, string json)
         {
             using var client = new HttpClient();
             var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -49,11 +65,26 @@ namespace Projects
             return await response.Content.ReadAsStringAsync();
         }
 
-        public async Task<string> SendGetRequestAsync(string url)
+        private static  async Task<string> SendGetRequestAsync(string url)
         {
             using var client = new HttpClient();
             var response = await client.GetAsync(url);
             return await response.Content.ReadAsStringAsync();
+        }
+
+        private static  async Task<string> SendHeadRequestAsync(string url)
+        {
+            using (var client = new HttpClient())
+            {
+                var request = new HttpRequestMessage(HttpMethod.Head, url);
+                var response = await client.SendAsync(request);
+
+                if (response.IsSuccessStatusCode){
+                    return response.ToString();
+                }else{
+                    return "";
+                }
+            }
         }
 
     }
