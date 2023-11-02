@@ -1,4 +1,4 @@
-package project-B;
+package project_B;
 
 import io.cucumber.java.en.*;
 

@@ -1,4 +1,4 @@
-package project-B;
+package project_B;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
