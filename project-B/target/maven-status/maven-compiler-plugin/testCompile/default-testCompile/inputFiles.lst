@@ -1,8 +1,5 @@
-/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/StepDefinitions.java
-/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/RemovingProject.java
-/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/RemovingTaskFromProject.java
-/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/Hooks.java
+/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/BaseStepDefinition.java
+/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/BaseTest.java
 /Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/RunCucumberTest.java
-/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/CreatingProjectWithFields.java
-/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/ChangingProjectFields.java
-/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/AddingTaskToProject.java
+/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/MiscStepDefinition.java
+/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/tests/MarkTaskAsDone.java
