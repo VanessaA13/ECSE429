@@ -1,6 +1,7 @@
 /Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/BaseStepDefinition.java
 /Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/BaseTest.java
 /Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/tests/OrganizeTaskByCategory.java
+/Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/tests/ViewTasksByProject.java
 /Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/RunCucumberTest.java
 /Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/tests/ViewCategories.java
 /Users/habibjarweh/ECSE429-PROJECT/ECSE429/project-B/src/test/java/project_B/MiscStepDefinition.java
