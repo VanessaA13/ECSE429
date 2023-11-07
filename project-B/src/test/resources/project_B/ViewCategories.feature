@@ -1,7 +1,7 @@
 @ViewCategories
 Feature: View categories
 
-  As a user, I want to be able to query all available categories, to know what to  mark my tasks under
+  As a user, I want to be able to query all available categories, to know what to  mark my tasks and projects under
 
 Background: 
     Given the API server is running
@@ -31,5 +31,5 @@ Scenario: Querying categories with no categories registered
 Scenario: Querying categories with an invalid endpoint
   Given the API server is running
   When a GET request is sent to /categoriez
-  Then the API server should respond with a 404 Not Found status code
+  Then the request with endpoint /categoriez should respond with a 404 Not Found status code
 

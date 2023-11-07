@@ -27,7 +27,6 @@ import java.util.List;
 /*
  * author: Habib Jarweh
  */
-
 public class OrganizeTaskByCategory extends BaseStepDefinition{
 
     @Given("^(.*) is the title of a category on the system$")
