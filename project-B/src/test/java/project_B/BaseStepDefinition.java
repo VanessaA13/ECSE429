@@ -41,6 +41,11 @@ public class BaseStepDefinition extends BaseTest {
         return null;
     }
 
+    public static JSONObject getAllProjects() {
+        JSONObject response = Unirest.get("/projects").asJson().getBody().getObject();
+        return response;
+    }
+
     public static JSONObject findCategoryByName(String categoryName) {
         JSONObject response = Unirest.get("/categories").asJson().getBody().getObject();
         for (Object cat : response.getJSONArray("categories")) {
