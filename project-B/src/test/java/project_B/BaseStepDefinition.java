@@ -1,7 +1,5 @@
 package project_B;
 
-import project_B.BaseTest;
-
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
 
@@ -41,6 +39,11 @@ public class BaseStepDefinition extends BaseTest {
             }
          }
         return null;
+    }
+
+    public static JSONObject getAllProjects() {
+        JSONObject response = Unirest.get("/projects").asJson().getBody().getObject();
+        return response;
     }
 
     public static JSONObject findCategoryByName(String categoryName) {
