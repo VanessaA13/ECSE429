@@ -4,14 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.And;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-
 
 import io.cucumber.datatable.DataTable;
 import kong.unirest.Unirest;
-import kong.unirest.HttpResponse;
-import kong.unirest.JsonNode;
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
 

@@ -1,7 +1,5 @@
 package project_B;
 
-import project_B.BaseTest;
-
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
 

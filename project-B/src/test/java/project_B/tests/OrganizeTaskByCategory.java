@@ -3,26 +3,15 @@ package project_B.tests;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en.And;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 
 
-import io.cucumber.datatable.DataTable;
 import kong.unirest.Unirest;
-import kong.unirest.HttpResponse;
-import kong.unirest.JsonNode;
-import kong.unirest.json.JSONArray;
-import kong.unirest.json.JSONObject;
+
 
 import static org.junit.Assert.*;
-
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import project_B.BaseStepDefinition;
 
-import java.util.List;
 
 /*
  * author: Habib Jarweh

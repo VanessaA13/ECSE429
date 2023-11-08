@@ -62,7 +62,7 @@ public class BaseTest {
 
     public static void startServerUntimed() {
         try {
-            ProcessBuilder pb = new ProcessBuilder("java", "-jar", "/Users/habibjarweh/Downloads/Application_Being_Tested/runTodoManagerRestAPI-1.5.5.jar");
+            ProcessBuilder pb = new ProcessBuilder("java", "-jar", "../runTodoManagerRestAPI-1.5.5.jar");
             if (serverProcess != null) {
                 serverProcess.destroy();
             }
