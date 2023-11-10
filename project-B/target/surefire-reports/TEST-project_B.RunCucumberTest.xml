@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="project_B.RunCucumberTest" time="12.081" tests="20" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="project_B.RunCucumberTest" time="22.128" tests="37" errors="3" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\vanes\AppData\Local\Temp\surefire14561333916155336469\surefirebooter5271749989144494384.jar C:\Users\vanes\AppData\Local\Temp\surefire14561333916155336469 2023-11-09T14-46-47_848-jvmRun1 surefire6997152963741402285tmp surefire_02984800969818096677tmp"/>
+    <property name="sun.java.command" value="C:\Users\vanes\AppData\Local\Temp\surefire15270718191812045739\surefirebooter1174211792756419990.jar C:\Users\vanes\AppData\Local\Temp\surefire15270718191812045739 2023-11-10T16-00-52_869-jvmRun1 surefire16904034890104514331tmp surefire_01962063063986373097tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\target\test-classes;C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\target\classes;C:\Users\vanes\.m2\repository\io\cucumber\cucumber-java\6.8.1\cucumber-java-6.8.1.jar;C:\Users\vanes\.m2\repository\io\cucumber\cucumber-core\6.8.1\cucumber-core-6.8.1.jar;C:\Users\vanes\.m2\repository\io\cucumber\cucumber-gherkin\6.8.1\cucumber-gherkin-6.8.1.jar;C:\Users\vanes\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.8.1\cucumber-gherkin-messages-6.8.1.jar;C:\Users\vanes\.m2\repository\io\cucumber\messages\13.1.0\messages-13.1.0.jar;C:\Users\vanes\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\vanes\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\vanes\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\vanes\.m2\repository\io\cucumber\cucumber-plugin\6.8.1\cucumber-plugin-6.8.1.jar;C:\Users\vanes\.m2\repository\io\cucumber\docstring\6.8.1\docstring-6.8.1.jar;C:\Users\vanes\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\vanes\.m2\repository\io\cucumber\create-meta\2.0.2\create-meta-2.0.2.jar;C:\Users\vanes\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\vanes\.m2\repository\io\cucumber\cucumber-junit\6.8.1\cucumber-junit-6.8.1.jar;C:\Users\vanes\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\vanes\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\vanes\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\vanes\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\vanes\.m2\repository\com\konghq\unirest-java\3.11.01\unirest-java-3.11.01.jar;C:\Users\vanes\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\vanes\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\vanes\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\vanes\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\vanes\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\vanes\.m2\repository\org\apache\httpcomponents\httpcore-nio\4.4.13\httpcore-nio-4.4.13.jar;C:\Users\vanes\.m2\repository\org\apache\httpcomponents\httpasyncclient\4.1.4\httpasyncclient-4.1.4.jar;C:\Users\vanes\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\vanes\AppData\Local\Temp\surefire14561333916155336469\surefirebooter5271749989144494384.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vanes\AppData\Local\Temp\surefire15270718191812045739\surefirebooter1174211792756419990.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.1+9-29"/>
@@ -58,44 +58,125 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="Create a category" classname="EMPTY_NAME #1" time="0.886">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-</failure>
+  <testcase name="Create a category" classname="EMPTY_NAME #1" time="0.946"/>
+  <testcase name="Create a category with only mandatory fields filled" classname="EMPTY_NAME #1" time="0.552"/>
+  <testcase name="Create a category with the mandatory fields not filled" classname="EMPTY_NAME #1" time="0.583"/>
+  <testcase name="Delete a category with all fields filled #1" classname="EMPTY_NAME #2" time="0.581"/>
+  <testcase name="Delete a category with all fields filled #2" classname="EMPTY_NAME #2" time="0.57"/>
+  <testcase name="Delete a category with all fields filled #3" classname="EMPTY_NAME #2" time="0.581"/>
+  <testcase name="Delete a category with only mandatory fields filled" classname="EMPTY_NAME #2" time="0.569"/>
+  <testcase name="Delete a category with an id that doesn&apos;t exist" classname="EMPTY_NAME #2" time="0.607">
+    <error message="JSONObject[&quot;errorMessages&quot;] not found." type="kong.unirest.json.JSONException">kong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+</error>
     <system-out><![CDATA[
-@AddCategory
-Scenario: Create a category                                                                &amp#27;[90m# project_B/AddCategory.feature:24&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe API server is running&amp#27;[0m                                                          &amp#27;[90m# project_B.MiscStepDefinition.theAPIServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe following categories are registered in the system:&amp#27;[0m                               &amp#27;[90m# project_B.tests.ViewCategories.the_following_categories_are_registered_in_the_todo_manager_restapi_system(io.cucumber.datatable.DataTable)&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mnewTitle&amp#27;[0m&amp#27;[32m is the title of a category&amp#27;[0m                                                &amp#27;[90m# project_B.tests.AddCategory.selected_title_is_the_title_of_a_category(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mnewDescription&amp#27;[0m&amp#27;[32m is the description of a category&amp#27;[0m                                      &amp#27;[90m# project_B.tests.AddCategory.is_the_description_of_a_category(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ma POST request to categories is sent with the following info:&amp#27;[0m                       &amp#27;[90m# project_B.tests.AddCategory.a_post_request_to_categories_is_sent_with_the_following_info(io.cucumber.datatable.DataTable)&amp#27;[0m
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31ma category should be created with the title &amp#27;[0m&amp#27;[31m&amp#27;[1mnewTitle&amp#27;[0m&amp#27;[31m and description &amp#27;[0m&amp#27;[31m&amp#27;[1mnewDescription&amp#27;[0m &amp#27;[90m# project_B.tests.AddCategory.a_category_should_be_created_with_title_and_description(java.lang.String,java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at project_B.tests.AddCategory.a_category_should_be_created_with_title_and_description(AddCategory.java:55)
-	at ✽.a category should be created with the title newTitle and description newDescription(classpath:project_B/AddCategory.feature:21)
+@DeleteCategory
+Scenario: Delete a category with an id that doesn't exist                                         &amp#27;[90m# project_B/DeleteCategory.feature:48&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe API server is running&amp#27;[0m                                                                 &amp#27;[90m# project_B.MiscStepDefinition.theAPIServerIsRunning()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe following categories are registered in the system:&amp#27;[0m                                      &amp#27;[90m# project_B.tests.ViewCategories.the_following_categories_are_registered_in_the_todo_manager_restapi_system(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ma DELETE request is sent with the following info:&amp#27;[0m                                          &amp#27;[90m# project_B.tests.DeleteCategory.a_DELETE_request_is_sent_with_the_following_info(io.cucumber.datatable.DataTable)&amp#27;[0m
+error:
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mthe server should respond with an error message &amp#27;[0m&amp#27;[31m&amp#27;[1mCould not find thing matching value for id&amp#27;[0m &amp#27;[90m# project_B.tests.AddCategory.the_server_should_respond_with_an_error_message(java.lang.String)&amp#27;[0m
+      &amp#27;[31mkong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+	at kong.unirest.json.JSONObject.getProperty(JSONObject.java:954)
+	at kong.unirest.json.JSONObject.getJSONArray(JSONObject.java:318)
+	at project_B.tests.AddCategory.the_server_should_respond_with_an_error_message(AddCategory.java:84)
+	at ✽.the server should respond with an error message Could not find thing matching value for id(classpath:project_B/DeleteCategory.feature:45)
 &amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[Nov 10, 2023 4:00:58 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:4567: Connection reset by peer
+Nov 10, 2023 4:00:58 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:4567
+]]></system-err>
   </testcase>
-  <testcase name="Create a category with only mandatory fields filled" classname="EMPTY_NAME #1" time="0.559"/>
-  <testcase name="Create a category with the mandatory fields not filled" classname="EMPTY_NAME #1" time="0.553"/>
-  <testcase name="Mark non completed todo as completed" classname="EMPTY_NAME #2" time="0.585"/>
-  <testcase name="Mark already completed todo as completed #1" classname="EMPTY_NAME #2" time="0.58"/>
-  <testcase name="Mark already completed todo as completed #2" classname="EMPTY_NAME #2" time="0.589"/>
-  <testcase name="Mark non-existent todo as completed #1" classname="EMPTY_NAME #2" time="0.562"/>
-  <testcase name="Mark non-existent todo as completed #2" classname="EMPTY_NAME #2" time="0.594"/>
-  <testcase name="Set a task under a category" classname="EMPTY_NAME #3" time="0.569"/>
-  <testcase name="Set a non-existent task under category" classname="EMPTY_NAME #3" time="0.581"/>
-  <testcase name="Set a task under a non-existent category" classname="EMPTY_NAME #3" time="0.546"/>
-  <testcase name="Querying all categories" classname="View categories" time="0.533"/>
-  <testcase name="Querying categories with no categories registered" classname="View categories" time="0.52"/>
-  <testcase name="Querying categories with an invalid endpoint" classname="View categories" time="0.515"/>
-  <testcase name="Querying all projects" classname="View projects" time="0.558"/>
-  <testcase name="Querying projects with no projects registered" classname="View projects" time="0.55"/>
-  <testcase name="Querying projects with an invalid endpoint" classname="View projects" time="0.504"/>
-  <testcase name="Request tasks for a project" classname="EMPTY_NAME #4" time="0.601"/>
-  <testcase name="Request tasks for a project with no tasks" classname="EMPTY_NAME #4" time="0.584"/>
-  <testcase name="Request tasks for a project not registered on the system" classname="EMPTY_NAME #4" time="0.59"/>
+  <testcase name="Delete a project that exists under a category that exists #1" classname="EMPTY_NAME #3" time="0.596"/>
+  <testcase name="Delete a project that exists under a category that exists #2" classname="EMPTY_NAME #3" time="0.611"/>
+  <testcase name="Delete a project with an invalid id under a category that exists" classname="EMPTY_NAME #3" time="0.552"/>
+  <testcase name="Delete a project that exists under a category id that&apos;s invalid" classname="EMPTY_NAME #3" time="0.625"/>
+  <testcase name="Mark non completed todo as completed" classname="EMPTY_NAME #4" time="0.574"/>
+  <testcase name="Mark already completed todo as completed #1" classname="EMPTY_NAME #4" time="0.605"/>
+  <testcase name="Mark already completed todo as completed #2" classname="EMPTY_NAME #4" time="0.61"/>
+  <testcase name="Mark non-existent todo as completed #1" classname="EMPTY_NAME #4" time="0.584"/>
+  <testcase name="Mark non-existent todo as completed #2" classname="EMPTY_NAME #4" time="0.612"/>
+  <testcase name="Modify all fields in a category" classname="EMPTY_NAME #5" time="0.549"/>
+  <testcase name="Modify a category to have only required fields #1" classname="EMPTY_NAME #5" time="0.572"/>
+  <testcase name="Modify a category to have only required fields #2" classname="EMPTY_NAME #5" time="0.596"/>
+  <testcase name="Modify a category to have only required fields #3" classname="EMPTY_NAME #5" time="0.578"/>
+  <testcase name="Modify a category that doesn&apos;t exist" classname="EMPTY_NAME #5" time="0.57">
+    <error message="JSONObject[&quot;errorMessages&quot;] not found." type="kong.unirest.json.JSONException">kong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+</error>
+    <system-out><![CDATA[
+@ModifyCategory
+Scenario: Modify a category that doesn't exist                                                                  &amp#27;[90m# project_B/ModifyCategory.feature:52&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe API server is running&amp#27;[0m                                                                               &amp#27;[90m# project_B.MiscStepDefinition.theAPIServerIsRunning()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe following categories are registered in the system:&amp#27;[0m                                                    &amp#27;[90m# project_B.tests.ViewCategories.the_following_categories_are_registered_in_the_todo_manager_restapi_system(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m[blank]&amp#27;[0m&amp#27;[32m is the id of a category&amp#27;[0m                                                                         &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.category_id_is_the_id_of_a_category(java.lang.String)&amp#27;[0m
+check here
+{
+"title":"Home",
+  "description":""
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ma POST request to categories is sent with the category id and the following info:&amp#27;[0m                        &amp#27;[90m# project_B.tests.ModifyCategory.a_post_request_to_categories_is_sent_with_the_following_info(io.cucumber.datatable.DataTable)&amp#27;[0m
+error:
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mthe server should respond with an error message &amp#27;[0m&amp#27;[31m&amp#27;[1mNo such category entity instance with GUID or ID 4 found&amp#27;[0m &amp#27;[90m# project_B.tests.AddCategory.the_server_should_respond_with_an_error_message(java.lang.String)&amp#27;[0m
+      &amp#27;[31mkong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+	at kong.unirest.json.JSONObject.getProperty(JSONObject.java:954)
+	at kong.unirest.json.JSONObject.getJSONArray(JSONObject.java:318)
+	at project_B.tests.AddCategory.the_server_should_respond_with_an_error_message(AddCategory.java:84)
+	at ✽.the server should respond with an error message No such category entity instance with GUID or ID 4 found(classpath:project_B/ModifyCategory.feature:49)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2023 4:01:06 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:4567: Connection reset by peer
+Nov 10, 2023 4:01:06 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:4567
+]]></system-err>
+  </testcase>
+  <testcase name="Add a project that exists to a category that exists" classname="EMPTY_NAME #6" time="0.629"/>
+  <testcase name="Add a project with an invalid id to a category that exists" classname="EMPTY_NAME #6" time="0.555"/>
+  <testcase name="Add a project that exists to a category id that&apos;s invalid" classname="EMPTY_NAME #6" time="0.548">
+    <error message="JSONObject[&quot;errorMessages&quot;] not found." type="kong.unirest.json.JSONException">kong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+</error>
+    <system-out><![CDATA[
+@OrganizeProjectTaskByCategory
+Scenario: Add a project that exists to a category id that's invalid                                                       &amp#27;[90m# project_B/OrganizeProjectTaskByCategory.feature:78&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe API server is running&amp#27;[0m                                                                                         &amp#27;[90m# project_B.MiscStepDefinition.theAPIServerIsRunning()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe following categories are registered in the system:&amp#27;[0m                                                              &amp#27;[90m# project_B.tests.ViewCategories.the_following_categories_are_registered_in_the_todo_manager_restapi_system(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe following projects are registered in the system:&amp#27;[0m                                                                &amp#27;[90m# project_B.tests.ViewProjects.the_following_categories_are_registered_in_the_todo_manager_restapi_system(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m[blank]&amp#27;[0m&amp#27;[32m is the title of a category&amp#27;[0m                                                                                &amp#27;[90m# project_B.tests.AddCategory.selected_title_is_the_title_of_a_category(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m[blank]&amp#27;[0m&amp#27;[32m is the description of a category&amp#27;[0m                                                                            &amp#27;[90m# project_B.tests.AddCategory.is_the_description_of_a_category(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m[blank]&amp#27;[0m&amp#27;[32m is the id of a category&amp#27;[0m                                                                                     &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.category_id_is_the_id_of_a_category(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m<projectID>&amp#27;[0m&amp#27;[32m is the id of a project&amp#27;[0m                                                                                  &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.project_id_is_the_id_of_a_project(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m<projectTitle>&amp#27;[0m&amp#27;[32m is the id of a project&amp#27;[0m                                                                               &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.project_id_is_the_id_of_a_project(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m<projectCompleted>&amp#27;[0m&amp#27;[32m is the completed value of a project&amp#27;[0m                                                              &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.project_completed_is_the_completed_value_of_a_project(java.lang.Boolean)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m<projectActive>&amp#27;[0m&amp#27;[32m is the active value of a project&amp#27;[0m                                                                    &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.project_active_is_the_active_value_of_a_project(java.lang.Boolean)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m<projectDescription>&amp#27;[0m&amp#27;[32m is the description of a project&amp#27;[0m                                                                &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.project_description_is_the_description_of_a_project(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ma POST request is sent with the following info for the category and project:&amp#27;[0m                                       &amp#27;[90m# project_B.tests.OrganizeProjectTaskByCategory.a_post_request_is_sent_with_the_following_info_for_the_category(io.cucumber.datatable.DataTable)&amp#27;[0m
+error:
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mthe server should respond with an error message &amp#27;[0m&amp#27;[31m&amp#27;[1mCould not find parent thing for relationship categories/4/projects&amp#27;[0m &amp#27;[90m# project_B.tests.AddCategory.the_server_should_respond_with_an_error_message(java.lang.String)&amp#27;[0m
+      &amp#27;[31mkong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+	at kong.unirest.json.JSONObject.getProperty(JSONObject.java:954)
+	at kong.unirest.json.JSONObject.getJSONArray(JSONObject.java:318)
+	at project_B.tests.AddCategory.the_server_should_respond_with_an_error_message(AddCategory.java:84)
+	at ✽.the server should respond with an error message Could not find parent thing for relationship categories/4/projects(classpath:project_B/OrganizeProjectTaskByCategory.feature:75)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2023 4:01:08 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:4567: Connection reset by peer
+Nov 10, 2023 4:01:08 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:4567
+]]></system-err>
+  </testcase>
+  <testcase name="Set a task under a category" classname="EMPTY_NAME #7" time="0.58"/>
+  <testcase name="Set a non-existent task under category" classname="EMPTY_NAME #7" time="0.586"/>
+  <testcase name="Set a task under a non-existent category" classname="EMPTY_NAME #7" time="0.576"/>
+  <testcase name="Querying all categories" classname="View categories" time="0.537"/>
+  <testcase name="Querying categories with no categories registered" classname="View categories" time="0.51"/>
+  <testcase name="Querying categories with an invalid endpoint" classname="View categories" time="0.503"/>
+  <testcase name="Querying all projects" classname="View projects" time="0.528"/>
+  <testcase name="Querying projects with no projects registered" classname="View projects" time="0.561"/>
+  <testcase name="Querying projects with an invalid endpoint" classname="View projects" time="0.484"/>
+  <testcase name="Request tasks for a project" classname="EMPTY_NAME #8" time="0.616"/>
+  <testcase name="Request tasks for a project with no tasks" classname="EMPTY_NAME #8" time="0.581"/>
+  <testcase name="Request tasks for a project not registered on the system" classname="EMPTY_NAME #8" time="0.568"/>
 </testsuite>

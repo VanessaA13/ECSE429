@@ -1,7 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: project_B.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.081 s <<< FAILURE! - in project_B.RunCucumberTest
-Create a category(EMPTY_NAME #1)  Time elapsed: 0.886 s  <<< FAILURE!
-java.lang.AssertionError
+Tests run: 37, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 22.128 s <<< FAILURE! - in project_B.RunCucumberTest
+Delete a category with an id that doesn't exist(EMPTY_NAME #2)  Time elapsed: 0.607 s  <<< ERROR!
+kong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+
+Modify a category that doesn't exist(EMPTY_NAME #5)  Time elapsed: 0.57 s  <<< ERROR!
+kong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
+
+Add a project that exists to a category id that's invalid(EMPTY_NAME #6)  Time elapsed: 0.548 s  <<< ERROR!
+kong.unirest.json.JSONException: JSONObject["errorMessages"] not found.
 
