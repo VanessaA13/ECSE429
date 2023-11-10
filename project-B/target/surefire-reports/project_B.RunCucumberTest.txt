@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: project_B.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.616 s <<< FAILURE! - in project_B.RunCucumberTest
+Creating a todo successfully with no description(Create a new instance of todo)  Time elapsed: 0.501 s  <<< FAILURE!
+java.lang.AssertionError: expected: java.lang.String<null> but was: null<null>
+
+Creating todo with an empty title unsuccessfully(Create a new instance of todo)  Time elapsed: 0.487 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<400>
+
