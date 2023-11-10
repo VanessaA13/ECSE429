@@ -68,12 +68,12 @@ Feature:
         And <projectDescription> is the description of a project
         When a POST request is sent with the following info for the category and project:
         |categoryID    | categoryTitle   | categoryDescription  | projectID    | projectTitle          | projectCompleted | projectActive | projectDescription |
-        |4             | Home            | [blank]              | 1            | Office Work           | false            | false         | [blank]            | 
+        |10             | Home            | [blank]              | 1            | Office Work           | false            | false         | [blank]            | 
         
         
         
         Then the server should respond with an error message <errorMessage>
         Examples:
         |categoryID    | categoryTitle   | categoryDescription    | errorMessage  |
-        | [blank]      | [blank]         |[blank]                 |Could not find parent thing for relationship categories/4/projects|
+        | [blank]      | [blank]         |[blank]                 |Could not find parent thing for relationship categories/10/projects|
 

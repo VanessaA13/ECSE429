@@ -49,5 +49,5 @@ Feature:
         Then the server should respond with an error message <errorMessage>
         Examples:
         |categoryID           | categoryTitle          | categoryDescription           | errorMessage |
-        |[blank]              |[blank]                 | [blank]               | No such category entity instance with GUID or ID 4 found |
+        |[blank]              |[blank]                 | [blank]               | No such category entity instance with GUID or ID 10 found |
 
