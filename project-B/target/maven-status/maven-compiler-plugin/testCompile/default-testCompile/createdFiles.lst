@@ -1,8 +1,9 @@
 project_B\RunCucumberTest.class
+project_B\tests\CreatingProjectWithFields.class
+project_B\tests\RemovingProject.class
 project_B\tests\ViewCategories.class
 project_B\tests\ViewProjects.class
 project_B\BaseTest.class
-project_B\CreatingProjectWithFields.class
 project_B\tests\MarkTaskAsDone.class
 project_B\tests\ViewTasksByProject.class
 project_B\MiscStepDefinition.class

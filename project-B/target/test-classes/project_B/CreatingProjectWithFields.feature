@@ -23,7 +23,7 @@ Feature: Creating Project with specific fields
         Then the new project with specific tasks and fields <project_title2> <project_completed2> <project_active2> <project_description2> <project_tasks2> should exist under Projects 
         Examples: 
             | project_title2 | project_completed2 | project_active2 | project_description2 | project_tasks2 | 
-            | ECSE429        | false              | false           | description          | [{"id":"1"}]  |
+            | ECSE429        | false              | false           | description          | [{"id":"1"}]   |
     
     #Error flow
     Scenario Outline: Creating project with specific fields and with relationship to a non-existing task

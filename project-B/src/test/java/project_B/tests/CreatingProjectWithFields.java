@@ -1,4 +1,4 @@
-package project_B;
+package project_B.tests;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
