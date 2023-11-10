@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: project_B.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.081 s <<< FAILURE! - in project_B.RunCucumberTest
+Create a category(EMPTY_NAME #1)  Time elapsed: 0.886 s  <<< FAILURE!
+java.lang.AssertionError
+
