@@ -5,7 +5,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
+import kong.unirest.HttpResponse;
+import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
@@ -41,16 +42,25 @@ public class CreatingProjectWithFields extends BaseStepDefinition {
     @When("^the user creates project with task (.*) (true|false) (true|false) (.*) (.*)$")
     public void the_user_creates_project_with_task(String project_title, Boolean project_completed, Boolean project_active, String project_description, String project_tasks) {
         Unirest.post("/projects")
-        .body("{\n\"title\":\"" + project_title + "\",\n\"description\":\"" + project_description + "\",\n\"active\":" + project_active + ",\n\"completed\":" + project_completed + "\n}")
-        .asJson();
-        assertTrue(true);
+        .body("{\n" +
+            "\"title\":\"" + project_title + "\",\n" +
+            "\"completed\":" + project_completed + ",\n" +
+            "\"active\":" + project_active + ",\n" +
+            "\"description\":\"" + project_description + "\",\n" +
+            "\"tasks\":[" + project_tasks + "]\n" +"}").asJson();
+        JSONObject response=findProjectByName(project_title);
+        assertNotNull(response);
     }
 
     @When("^the user creates project with non-existing task (.*) (true|false) (true|false) (.*) (.*)$")
     public void the_user_creates_project_with_non_existing_task(String project_title, Boolean project_completed, Boolean project_active, String project_description, String project_tasks) {
         Unirest.post("/projects")
-        .body("{\n\"title\":\"" + project_title + "\",\n\"description\":\"" + project_description + "\",\n\"active\":" + project_active + ",\n\"completed\":" + project_completed + "\n}")
-        .asJson();
+        .body("{\n" +
+            "\"title\":\"" + project_title + "\",\n" +
+            "\"completed\":" + project_completed + ",\n" +
+            "\"active\":" + project_active + ",\n" +
+            "\"description\":\"" + project_description + "\",\n" +
+            "\"tasks\":[" + project_tasks + "]\n" +"}").asJson();
         assertTrue(true);
     }
     
@@ -64,23 +74,27 @@ public class CreatingProjectWithFields extends BaseStepDefinition {
         assertFalse(response.has("tasks"));
     }
 
-    @Then("^the new project with specific fields and tasks should exist under Projects$")
-    public void the_new_project_with_specific_fields_and_tasks_should_exist_under_projects() {
-        assertTrue(true);
+    @Then("^the new project with specific tasks and fields (.*) (true|false) (true|false) (.*) (.*) should exist under Projects$")
+    public void the_new_project_with_specific_fields_and_tasks_should_exist_under_projects(String project_title, Boolean project_completed, Boolean project_active, String project_description, String project_tasks) {
+        JSONObject response=findProjectByName(project_title);
+        assertNotNull(response);
+        assertEquals(project_completed+"", response.getString("completed"));
+        assertEquals(project_active+"", response.getString("active"));
+        assertEquals(project_description, response.getString("description"));
+        assertEquals(project_tasks, response.getJSONArray("tasks").toString());
     }
 
     
-    @Given("^the todo with todo_id 3 does not exist$")
+    @Given("^the following todo with todo_id 3 does not exist$")
     public void the_todo_with_todo_id_does_not_exist(DataTable dataTable) {
-        // Write code here that turns the phrase above into concrete actions
-        assertTrue(true);
+        HttpResponse<JsonNode> response = Unirest.get("/todos/3").header("accept", "application/json").asJson();
+        assertTrue(response.getStatus()>=300);
     }
     
-    @Then("^the new project with specific fields should not exist under Projects$")
-    @And ("^an error message should be displayed$")
-    public void the_new_project_with_specific_fields_should_not_exist_under_projects() {
-        // Write code here that turns the phrase above into concrete actions
-        assertTrue(true);
+    @Then("^the new project (.*) with specific fields should not exist under Projects$")
+    public void the_new_project_with_specific_fields_should_not_exist_under_projects(String project_title) {
+        JSONObject response=findProjectByName(project_title);
+        assertNull(response);
     }
 
 }
