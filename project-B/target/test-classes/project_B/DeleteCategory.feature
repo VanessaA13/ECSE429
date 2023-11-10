@@ -41,9 +41,9 @@ Feature:
     Scenario: Delete a category with an id that doesn't exist
         When a DELETE request is sent with the following info:
         |categoryID    | categoryTitle          | categoryDescription   | 
-        |4             | [blank]                | [blank]       |
+        |10             | title               | [blank]       |
         Then the server should respond with an error message <errorMessage>
         Examples:
         |categoryID   | categoryTitle    | categoryDescription   | errorMessage |
-        | [blank]           |  [blank]         |  [blank]        | Could not find thing matching value for id |
+        | [blank]           |  [blank]         |  [blank]        | Could not find any instances with categories/10 |
 

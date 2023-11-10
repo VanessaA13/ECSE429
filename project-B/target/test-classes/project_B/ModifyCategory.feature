@@ -45,7 +45,7 @@ Feature:
         Given <categoryID> is the id of a category 
         When a POST request to categories is sent with the category id and the following info:         
         |categoryID    | categoryTitle          | categoryDescription           | 
-        |4             | Home                   | [blank]                      | 
+        |10             | Home                   | [blank]                      | 
         Then the server should respond with an error message <errorMessage>
         Examples:
         |categoryID           | categoryTitle          | categoryDescription           | errorMessage |
