@@ -1,6 +1,7 @@
 project_B\RunCucumberTest.class
 project_B\tests\CreatingProjectWithFields.class
 project_B\tests\RemovingProject.class
+project_B\tests\ChangingProjectFields.class
 project_B\tests\ViewCategories.class
 project_B\tests\ViewProjects.class
 project_B\BaseTest.class
