@@ -10,4 +10,5 @@ project_B\tests\ViewTasksByProject.class
 project_B\MiscStepDefinition.class
 project_B\BaseStepDefinition.class
 project_B\tests\OrganizeTaskByCategory.class
+project_B\tests\AddingTaskToProject.class
 project_B\BaseTest$1.class
