@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: project_B.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.695 s - in project_B.RunCucumberTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.339 s - in project_B.RunCucumberTest

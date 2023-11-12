@@ -1,6 +1,5 @@
 package project_B.tests;
 
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +11,6 @@ import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
 
 import static org.junit.Assert.*;
-import java.util.List;
 import project_B.BaseStepDefinition;
 
 public class RemovingProject extends BaseStepDefinition{

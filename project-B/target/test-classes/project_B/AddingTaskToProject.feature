@@ -25,7 +25,7 @@ Feature: Adding a specific task to a specific project
     Scenario Outline: Creating Project with specific fields and with relationship to a non-existing task
         Given the project with <project_title3> exists but <project_task3> does not exist
         When the user add the non-existing todo <project_task3> to the project <project_title3>
-        Then the todo <project_task3> should not exist in the project's <project_title3> project_tasks field
+        Then the todo <project_task3> should not exist in the project's <project_title3> project_tasks field and error should be displayed
         Examples:
             | project_title3 | project_completed3 | project_active3 | project_description3 | project_task3  |
             | ECSE429        | false              | false           | description          | 3              |

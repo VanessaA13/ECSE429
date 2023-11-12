@@ -31,7 +31,7 @@ Feature: Creating Project with specific fields
         | id    | title             | doneStatus | description  |
         | 3     | scan paperwork    | false      |              |
         When the user creates project with non-existing task <project_title3> <project_completed3> <project_active3> <project_description3> <project_tasks3>
-        Then the new project <project_title3> with specific fields should not exist under Projects
+        Then the new project <project_title3> with specific fields should not exist under Projects and error should be displayed
         Examples:
             | project_title3 | project_completed3 | project_active3 | project_description3 | project_tasks3  |
             | ECSE429        | false              | false           | description          | [{"id":"3"}]     |

@@ -1,7 +1,6 @@
 package project_B.tests;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
@@ -12,7 +11,6 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en.And;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
@@ -103,7 +101,7 @@ public class ChangingProjectFields extends BaseStepDefinition {
         assertEquals(response.getString("description"), description+"");
     }
 
-    @Then("^the project (\\d+) with modified non-tasks fields should not exist under Projects$")
+    @Then("^the project (\\d+) with modified non-tasks fields should not exist under Projects and error should be displayed$")
     public void the_project_does_not_exist(int id) {
         HttpResponse<JsonNode> response=Unirest.get("/projects/"+id).header("accept", "application/json").asJson();
         assertTrue(response.getStatus()>=300);

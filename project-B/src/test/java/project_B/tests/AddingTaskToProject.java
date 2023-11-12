@@ -1,18 +1,12 @@
 package project_B.tests;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import java.util.List;
-
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en.And;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
@@ -119,7 +113,7 @@ public class AddingTaskToProject extends BaseStepDefinition {
         assertTrue(id2Associated);
     }
 
-    @Then("^the todo (\\d+) should not exist in the project's (.*) project_tasks field$")
+    @Then("^the todo (\\d+) should not exist in the project's (.*) project_tasks field and error should be displayed$")
     public void todos_not_associated_to_project(int id, String project) {
         JSONObject JSON_project = findProjectByName(project);
         assertNotNull(JSON_project);

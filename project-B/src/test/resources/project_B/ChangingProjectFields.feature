@@ -32,7 +32,7 @@ Feature: Changing the non-tasks fields of a specific project
         | title   | completed | active | description |
         | ECSE429 | false     | false  | description |
         When the user tries to set the non-existing project <id> with <project_title3> <project_completed3> <project_active3> <project_description3>
-        Then the project <id> with modified non-tasks fields should not exist under Projects
+        Then the project <id> with modified non-tasks fields should not exist under Projects and error should be displayed
         Examples:
             | project_title3 | project_completed3 | project_active3 | project_description3  | id     |
             | ECSE428        | true               | true            | description1          | 2      |

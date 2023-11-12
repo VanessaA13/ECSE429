@@ -1,14 +1,12 @@
 package project_B.tests;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
-import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
 
 import static org.junit.Assert.*;
@@ -91,7 +89,7 @@ public class CreatingProjectWithFields extends BaseStepDefinition {
         assertTrue(response.getStatus()>=300);
     }
     
-    @Then("^the new project (.*) with specific fields should not exist under Projects$")
+    @Then("^the new project (.*) with specific fields should not exist under Projects and error should be displayed$")
     public void the_new_project_with_specific_fields_should_not_exist_under_projects(String project_title) {
         JSONObject response=findProjectByName(project_title);
         assertNull(response);
