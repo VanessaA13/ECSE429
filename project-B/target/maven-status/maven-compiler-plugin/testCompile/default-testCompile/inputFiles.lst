@@ -1,3 +1,4 @@
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\RemovingTaskFromProject.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\RunCucumberTest.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\ViewTasksByProject.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\MiscStepDefinition.java
@@ -6,9 +7,18 @@ C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\Orga
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\OrganizeProjectTaskByCategory.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\BaseTest.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\BaseStepDefinition.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\ChangingProjectFields.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\AddingTaskToProject.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\DeleteProjectUnderCategory.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\ViewCategories.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\DeleteATodo.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\DeleteCategory.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\ViewProjects.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\ModifyTodosDescription.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\CreatingProjectWithFields.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\DeleteTodoAndCategory.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\MarkTaskAsDone.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\AddATodo.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\RemovingProject.java
+C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\ViewTodosInCategories.java
 C:\Users\vanes\Uni\ECSE 429\ECSE429\project-B\src\test\java\project_B\tests\AddCategory.java
